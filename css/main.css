@@ -14,12 +14,12 @@
 
 header{
   grid-column: 1 / -1;
+  height: 420px;
+  background-color: red;
 }
 
 .box{
   position: relative;
-  background-color: brown;
-  height: 420px;
 }
 
 header .background-header{
@@ -33,6 +33,8 @@ header .background-header{
   height: auto;
   width: 1150px;
 }
+
+
 
 @media only screen and (max-width: 1280px){
   .wrapper{
@@ -48,7 +50,6 @@ header .background-header{
       height: auto;
       margin: 0 auto 0 auto;
   }
-
 }
 
 /********************************************\
@@ -80,5 +81,5 @@ header .background-header{
 footer{
   width: 100%;
   height: 70px;
-  background: yellow;
+  background: black;
 }

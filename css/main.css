@@ -188,7 +188,13 @@ header {
     .about p {
       margin-top: 30px
     }
-  }
+}
+
+@media only screen and (max-width: 400px) {
+    .about p {
+        font-size: 15px;
+    }
+}
 
 /********************************************\
 ******************  FOOTER  *****************

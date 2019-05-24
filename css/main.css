@@ -106,22 +106,17 @@ header {
         height: auto;
         margin: 0 auto 0 auto;
     }
-  
-    .dazn-logo {
-        top: 0%;
-        left: 90%;
-    }
   }
   
   @-moz-document url-prefix() { 
     .dazn-logo {
-      position: absolute;
-      top: 8%;
-      transition: 1s;
-      left: 45%;
-      height: 25%;
-      margin-top: 2%
-    }
+        position: absolute;
+        top: 0;
+        transition: 1s;
+        right: 10%;
+        height: 10%;
+        margin-top: 2%
+      }
   }
 
 /********************************************\

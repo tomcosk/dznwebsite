@@ -21,9 +21,9 @@ header {
   
   video {
     position: relative;
-    width: 100%;
+    width: 175%;
     height: 100%;
-    transform: translateY(-30%)
+    transform: translate(-21%, -30%);
   }
   
   .video div {
@@ -41,16 +41,16 @@ header {
     top: 0;
     transition: 1s;
     height: 10%;
-    margin-top: 2%
+    margin-top: 2%;
   }
   
   .dazn-logo {
     position: absolute;
     top: 0;
     transition: 1s;
-    right: 10%;
     height: 10%;
-    margin-top: 2%
+    right: 20%;
+    margin-top: 2%;
   }
   
   .slider {
@@ -63,6 +63,14 @@ header {
         height: auto;
         margin: 0 auto 0 auto;
     }
+
+    video {
+        position: relative;
+        width: 175%;
+        height: 100%;
+        transform: translate(-17%, -30%);
+        right: 18%;
+    }
   }
   
   @media only screen and (max-width: 824px) {
@@ -74,6 +82,10 @@ header {
   
     .desktop-header {
       display: none;
+    }
+
+    video {
+        right: 10%;
     }
   
     .slider {
@@ -137,21 +149,22 @@ header {
     margin-bottom: 50px;
   }
   
-  .about h1 {
+.about h1 {
     grid-area: heading;
     place-self: center;
     color: #172b4d;
     font-family: sans-serif;
     font-size: 40px;
-  }
+}
 
-  .about p {
+.about p {
     grid-area: t-about;
     font-family: sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #172b4d;
-  }
+    display: block;
+}
 
 .wrapper section:nth-child(2) {
     width: 100%;
@@ -184,7 +197,7 @@ header {
 footer {
     padding-top: 0px;
     padding-bottom: 30px;
-    background-color: #4b4e51;
+    background-color: rgb(50,50,50);
     width: 100%;
     text-align: center;
 }

@@ -174,14 +174,11 @@ header{
 /********************************************\*/
 
 footer {
-    margin: 0px;
-    padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 30px;
     background-color: #4b4e51;
     width: 100%;
-}
-
-footer img{
-    margin-left: 3px;
+    text-align: center;
 }
 
 footer a {
@@ -191,15 +188,41 @@ footer a {
 
 footer p {
     color: white;
-    display: inline;
     font-size: 11px;
-    text-align: center;
     font-family: sans-serif;
+    margin-top: 20px;
 }
 
-.social_icons {
-    width: 40%;
-    display: inline;
-    margin-left: 10%;
-    margin-right: 25%;
+footer i {
+    color: white;
+}
+
+.social-icons .a_facebook {
+    background: #4087cf;
+}
+.social-icons .a_linkedin {
+    background: #3377bb;
+}
+.social-icons .a_twitter {
+    background: #1dcaff;
+}
+
+.social-icons a {
+    width: 33.333333333333% !important;
+}
+
+.social-icons a {
+    float: left;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 30%;
+}
+
+.social-icons {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    display: block;
+    padding-bottom: 40px;
 }

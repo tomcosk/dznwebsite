@@ -7,25 +7,25 @@
 ******************  HEADER  *****************
 /********************************************\*/
 
-header{
+header {
     display: block;
     width: 100%;
   }
   
-  .desktop-header{
+  .desktop-header {
     overflow: hidden;
     height: 420px;
     background-size: cover;
     background-position: center
   }
   
-  video{
+  video {
     position: relative;
     width: 100%;
     height: 100%;
   }
   
-  .video div{
+  .video div {
     background-color: rgb(112,112,112);
   }
   
@@ -47,7 +47,7 @@ header{
     position: absolute;
     top: 0;
     transition: 1s;
-    left: 90%;
+    right: 10%;
     height: 10%;
     margin-top: 2%
   }
@@ -56,7 +56,7 @@ header{
     display: none;
   }
   
-  @media only screen and (max-width: 1280px){
+  @media only screen and (max-width: 1280px) {
     .wrapper {
         width: 90%;
         height: auto;
@@ -64,7 +64,7 @@ header{
     }
   }
   
-  @media only screen and (max-width: 824px){
+  @media only screen and (max-width: 824px) {
     .wrapper {
         width: 90%;
         height: auto;
@@ -100,7 +100,7 @@ header{
     }
   }
   
-  @media only screen and (max-width: 620px){
+  @media only screen and (max-width: 620px) {
     .wrapper {
         width: 90%;
         height: auto;

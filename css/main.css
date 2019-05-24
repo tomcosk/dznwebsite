@@ -104,11 +104,34 @@ header .background-header {
 *******************  MAIN  ******************
 /********************************************\*/
 
-.wrapper section:first-child {
+.about {
     width: 100%;
     height: auto;
-    background: green;
-}
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "heading t-about";
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .about h1 {
+    grid-area: heading;
+    place-self: center;
+    color: #172b4d;
+    font-family: sans-serif;
+    font-size: 40px;
+  }
+
+  .about p {
+    grid-area: t-about;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #172b4d;
+  }
 
 .wrapper section:nth-child(2) {
     width: 100%;

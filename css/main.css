@@ -57,16 +57,16 @@ header {
     display: none;
   }
 
-@-moz-document url-prefix() { 
+  @-moz-document url-prefix() { 
     .dazn-logo {
         position: absolute;
         top: 0;
         transition: 1s;
         right: 10%;
-        height: 10%;
+        width: 5%;
         margin-top: 2%
     }
-}
+  }
   
 @media only screen and (max-width: 1150px) {
     .wrapper {
@@ -152,7 +152,8 @@ header {
     line-height: 18px;
     color: #172b4d;
     display: block;
-}
+    text-align: justify;
+  }
 
 .wrapper section:nth-child(2) {
     width: 100%;

@@ -508,14 +508,25 @@ footer i {
   color: white;
 }
 
-.social-icons .a_facebook {
+.social-icons .a_facebook:hover {
   background: #4087cf;
 }
-.social-icons .a_linkedin {
+.social-icons .a_facebook {
+  background: #5c99d6;
+}
+
+.social-icons .a_linkedin:hover {
   background: #3377bb;
 }
-.social-icons .a_twitter {
+.social-icons .a_linkedin {
+  background: #4b8cce;
+}
+
+.social-icons .a_twitter:hover {
   background: #1dcaff;
+}
+.social-icons .a_twitter {
+  background: #4dd5ff;
 }
 
 .social-icons a {

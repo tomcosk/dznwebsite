@@ -1,35 +1,26 @@
 $(function(){
     $(".desc-team").hide();
-    
-    $(".team1").click(function(){
-        showTeam(editorial);  
-    });
-    $(".team2").click(function(){
-        showTeam(singleCostumersView);
-    });
-    $(".team3").click(function(){
-        showTeam(wtaTv);
-    });
-    $(".team4").click(function(){
-        showTeam(coverageTool);
-    });
-    $(".team5").click(function(){
-        showTeam(projekt0);
-    });
-    $(".team6").click(function(){
-        showTeam(rightsPlatform);
-    });
-    $(".team7").click(function(){
-        showTeam(cms);
-    });
-    $(".team8").click(function(){
-        showTeam(vod);
-    });
+    var teams = {
+        "team1": "editorial",
+        "team2": "singleCostumersView",
+        "team3": "wtaTv",
+        "team4": "coverageTool",
+        "team5": "projekt0",
+        "team6": "rightsPlatform",
+        "team7": "cms",
+        "team8": "vod",
+    };
+
+    for(key in teams) {
+        $("."+key).click(function(){
+            showTeam(teams[key]);  
+        });
+    }
 });
 
 function showTeam(teamName) {
     $(".desc-team").hide();
-    $(teamName).show();     
+    $("#"+teamName).show();     
 }
 
 

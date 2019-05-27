@@ -1,41 +1,35 @@
 $(function(){
-    hideAllTeams();
-
+    $(".desc-team").hide();
+    
     $(".team1").click(function(){
-        hideAllTeams();
-        $("#editorial").show();  
+        showTeam(editorial);  
     });
     $(".team2").click(function(){
-        hideAllTeams();
-        $("#single-costumers-view").show();
+        showTeam(singleCostumersView);
     });
     $(".team3").click(function(){
-        hideAllTeams();
-        $("#wta-tv").show();
+        showTeam(wtaTv);
     });
     $(".team4").click(function(){
-        hideAllTeams();
-        $("#coverage-tool").show();
+        showTeam(coverageTool);
     });
     $(".team5").click(function(){
-        hideAllTeams();
-        $("#projekt-0").show();
+        showTeam(projekt0);
     });
     $(".team6").click(function(){
-        hideAllTeams();
-        $("#rights-platform").show();
+        showTeam(rightsPlatform);
     });
     $(".team7").click(function(){
-        hideAllTeams();
-        $("#cms").show();
+        showTeam(cms);
     });
     $(".team8").click(function(){
-        hideAllTeams();
-        $("#vod").show();
+        showTeam(vod);
     });
 });
 
-function hideAllTeams() {
+function showTeam(teamName) {
     $(".desc-team").hide();
+    $(teamName).show();     
 }
+
 

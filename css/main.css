@@ -221,10 +221,11 @@ video {
     "team7 team8 . .";
 }
 
-.teams img{
+.teams img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   cursor: pointer;
+  display: block;
 }
 
 .team1 {

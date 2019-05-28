@@ -387,13 +387,7 @@ video {
   grid-template-areas:
     "desc photo";
   margin-top: 50px;
-  gap: 90px;
-
-}
-
-.desc-team img {
-  width: 70%;
-  height: 90%;
+  gap: 15%;
 }
 
 .team-text {
@@ -404,7 +398,9 @@ video {
 
 .team-photo {
   grid-area: photo;
-  
+  height: 90%;
+  width: 90%;
+  padding-bottom: 56.25%;
 }
 
 /******---CITATIONS---******/
@@ -451,6 +447,7 @@ video {
 .employee-n {
   color: rgb(30,144,255);
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 
@@ -466,6 +463,11 @@ video {
 
   .about p {
     text-align: center;
+  }
+
+  .team-photo {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

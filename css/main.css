@@ -146,6 +146,12 @@ video {
   font-size: 40px;
 }
 
+@supports (-ms-ime-align:auto) {
+  .about h1 {
+    margin-top: 25%;
+  }
+}
+
 .about p {
   grid-area: t-about;
   display: block;
@@ -349,6 +355,18 @@ video {
   margin-right: auto;
 }
 
+@-moz-document url-prefix() {  
+  .team-photo {
+    padding-bottom: 10%;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  .team-photo {
+    padding-bottom: 10%;
+  }
+}
+
 /******---CITATIONS---******/
 
 .citations {
@@ -467,11 +485,6 @@ footer i {
 
 /******---FOR MOBILE VERSION---******/
 
-
-@media only screen and (max-width: 1150px) {
-  
-}
-
 @media only screen and (max-width: 1150px) {
   #slideshow :nth-child(1) {
     background-image: url(../img/1.jpg);
@@ -495,6 +508,7 @@ footer i {
   .slidewrap {
     position: relative;
   }
+
   .wrapper {
     width: 90%;
     height: auto;
@@ -520,6 +534,10 @@ footer i {
 
   .about p {
     text-align: center;
+  }
+
+  .team-photo {
+    padding-bottom: 56.25%;
   }
 }
 

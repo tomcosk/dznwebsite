@@ -1,208 +1,288 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <link rel="manifest" href="site.webmanifest">    
-    <link rel="apple-touch-icon" href="icon.png">    
-    <!-- Place favicon.ico in the root directory -->  
-    <link rel="stylesheet" href="css/normalize.css">    
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="theme-color" content="#fafafa">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/teams.js"></script>
     <title>DAZN</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="desktop-header">
-            <div class="wrapper">
-                <div class="video-header">
-                    <video muted autoplay loop>
-                        <source src="video/header-video.mp4" type="video/mp4">
-                    </video>
-                    <div class="before-header">
-                            <div class="name-team"></div>
-                        </div>
-                </div>
+      <div class="desktop-header">
+        <div class="wrapper">
+          <div class="video-header">
+            <video muted autoplay loop>
+              <source src="video/header-video.mp4" type="video/mp4" />
+            </video>
+            <div class="before-header">
+              <div class="name-team"></div>
             </div>
-            <div class="wrapper">
-                <img class="ness-logo" src="img/ness-logo.png" alt="Ness logo">
-                <img class="dazn-logo" src="img/dazn-logo.png" alt="Dazn logo">
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="slidewrap">
+        <div class="logoWrapper">
+          <img class="ness-logo" src="img/ness-logo.png" alt="Ness logo" />
+          <img class="dazn-logo" src="img/dazn-logo.png" alt="Dazn logo" />
+        </div>
+        <div id="slideshow">
+          <!-- define each background-image in CSS -->
+          <div></div>
+          <!-- #slideshow :nth-child(1) -->
+          <div></div>
+          <!-- #slideshow :nth-child(2) -->
+          <div></div>
+          <!-- #slideshow :nth-child(3) -->
+          <div></div>
+          <!-- #slideshow :nth-child(4) -->
+        </div>
+      </div>
 
-        <div class="slider">
-            <div class="wrapper">
-                <img class="ness-logo" src="img/ness-logo.png" alt="Ness logo">
-                <img class="dazn-logo" src="img/dazn-logo.png" alt="Dazn logo">
-            </div>
-        </div>
+      <!-- <div class="slider">
+        </div> -->
     </header>
 
     <main>
-        <div class="wrapper">
-            <section class="about">
-                <h1><span>World-Class streaming</span> service</h1>
-                <p>Our client is a leading sports content provider with more than 1000 employees worldwide and 5 development centers in London, Leeds, Amsterdam, Katowice and Košice. Among its flagship products are popular subscription-based video streaming service Dazn.com (also known as Netflix of sport), most visited football portal in the world Goal.com and official WTA streaming service Wtatv.com.
-                <br><br>In our Košice office we focus mostly on development of media platform and content management system. Most of the development work on these systems is done in Java with usage of popular frameworks such as Spring, Hibernate and GWT. Our platform relies both on relational Oracle SQL database and Elasticsearch NoSQL database engine. We also have specialized big data team that harnesses the power of technologies such as Scala, Hadoop, Spark and Neo4j graph database as well as specialized frontend team masterfully crafting web pages in TypeScript and React. We are strong believers in automation, our automated tests are mostly written in Python with the usage of Selenium framework, our infrastructure is fully automated using Puppet and Ansible, while our CI pipeline is fully scripted in Groovy.
-                <br><br>Our project has a strong agile mentality and decisive “build it – own it” attitude. Our development process is driven by SCRUM framework and values of courage, focus, commitment, respect and openness. We are also strong believers in roles over titles approach, cross-functional teams and building a people with T-shaped skills.</p>
-            </section>
-                
-            <section class="teams">
-                <div class="team1">
-                    <a href="#editorial">
-                        <img src="img/tool_editorial.jpeg" alt="Editorial">
-                        <div class="overlay">
-                            <div class="name-team"><span>Editorial</span></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team2">
-                    <a href="#singleCostumersView">
-                        <img src="img/tool_scv.jpg" alt="Costumers View">
-                        <div class="overlay">
-                            <div class="name-team">Single customer view</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team3">
-                    <a href="#wtaTv">
-                        <img src="img/tool_basketballwta.jpg" alt="Basketball WTA">
-                        <div class="overlay">
-                            <div class="name-team">WTA TV &<br>LIVEBASKETBALL.TV</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team4">
-                    <a href="#coverageTool">
-                        <img src="img/tool_coverage.jpg" alt="Coverage Tool">
-                        <div class="overlay">
-                            <div class="name-team">Coverage tool</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team5">
-                    <a href="#projekt0">
-                        <img src="img/tool_p0.jpg" alt="Project0">
-                        <div class="overlay">
-                            <div class="name-team">Projekt 0</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team6">
-                    <a href="#rightsPlatform">
-                        <img src="img/tool_rights_platform.jpg" alt="Rights Platform">
-                        <div class="overlay">
-                            <div class="name-team">Rights platform</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="heading-team">
-                    <h1>DAZN Kosice Teams</h1>
-                </div>
-                <div class="team7">
-                    <a href="#cms">
-                        <img src="img/tool_cms.jpg" alt="CMS">
-                        <div class="overlay">
-                            <div class="name-team">CMS componentisation</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="team8">
-                    <a href="#vod">
-                        <img src="img/tool_vod.jpg" style="height: 100%" alt="VOD">
-                        <div class="overlay">
-                            <div class="name-team">VOD</div>
-                        </div>
-                    </a>
-                </div>
-            </section>
+      <div class="wrapper">
+        <section class="about">
+          <h1><span>World-Class streaming</span> service</h1>
+          <p>
+            Our client is a leading sports content provider with more than 1000 employees worldwide and 5 development
+            centers in London, Leeds, Amsterdam, Katowice and Košice. Among its flagship products are popular
+            subscription-based video streaming service Dazn.com (also known as Netflix of sport), most visited football
+            portal in the world Goal.com and official WTA streaming service Wtatv.com. <br /><br />In our Košice office
+            we focus mostly on development of media platform and content management system. Most of the development work
+            on these systems is done in Java with usage of popular frameworks such as Spring, Hibernate and GWT. Our
+            platform relies both on relational Oracle SQL database and Elasticsearch NoSQL database engine. We also have
+            specialized big data team that harnesses the power of technologies such as Scala, Hadoop, Spark and Neo4j
+            graph database as well as specialized frontend team masterfully crafting web pages in TypeScript and React.
+            We are strong believers in automation, our automated tests are mostly written in Python with the usage of
+            Selenium framework, our infrastructure is fully automated using Puppet and Ansible, while our CI pipeline is
+            fully scripted in Groovy. <br /><br />Our project has a strong agile mentality and decisive “build it – own
+            it” attitude. Our development process is driven by SCRUM framework and values of courage, focus, commitment,
+            respect and openness. We are also strong believers in roles over titles approach, cross-functional teams and
+            building a people with T-shaped skills.
+          </p>
+        </section>
 
-            <section>
-                <div id="editorial" class="desc-team">
-                    <p class="team-text">The Editorial team prepares the whole platform for editors (sport redactors). They allow to publicize contents which mainly represents 
-                        articles. Their main focus is collecting attachments based on sports/geo-locations and players. </p>
-                    <img class="team-photo" src="img/team_editorial.jpg" alt="">
-                </div>
-                <div id="singleCostumersView" class="desc-team">
-                    <p class="team-text">This team  connects and identifies user accounts. They sort, classify and offer ads based on interest {portals}, demographics. They 
-                        aggregate data and connect users with DAZN portal. The team applies their own solutions and work with the top technologies</p>
-                    <img class="team-photo" src="img/team_scv.jpg" alt="">
-                </div>
-                <div id="wtaTv" class="desc-team">
-                    <p class="team-text">The team creates websites based on client’s requirements. Currently they evolve and support 2 sport websites and keep them working.
-                        They are focusing mainly to front-end development. </p>
-                    <img class="team-photo" src="img/team_.jpg" alt="">
-                </div>
-                <div id="coverageTool" class="desc-team">
-                    <p class="team-text">The Coverage team takes care of a planning tool that notifies other systems which are already distributed. They also create and schedule 
-                        sport events via Content Management System. </p>
-                    <img class="team-photo" src="img/coverage.jpg" alt="">
-                </div>
-                <div id="projekt0" class="desc-team">
-                    <p class="team-text">Project 0 builds  platforms for company websites eg. www.Gool.com or Sportingnews. They create support tools, which help to manage DAZN 
-                        contents. This team directly collaborate with the Poland DAZN side.</p>
-                    <img class="team-photo" src="img/team_p0.jpg" alt="">
-                </div>
-                <div id="rightsPlatform" class="desc-team">
-                    <p class="team-text">The team automates the process of compliance, enforcement and limitation of rights. They also  provide banning inappropriate 
-                        advertisement. The rights should not be violated. The RP team also monitors expiration of contracts. </p>
-                <img class="team-photo" src="img/team_rights_platform.jpg" alt="">
-                </div>
-                <div id="cms" class="desc-team">
-                    <p class="team-text">Their main responsibility is, to create and maintain platforms for other teams. Their maintain also continous integrations and 
-                        continuous deployment and upgrades to new technologies. They try to replace Puppet with Ansibe. Code refactoring,  and github monitoring is also 
-                        important part of their work.  </p>
-                    <img class="team-photo" src="img/team_cms.jpg" alt="">
-                </div>
-                <div id="vod" class="desc-team">
-                    <p class="team-text">The VOD team enables for clients streaming of sport contents. They work with recorded sport videos and also support recording of sport 
-                        events, create clips via Content Management System and send video contents to different destinations and shares with several clients. The teams main 
-                        focus in the near future will be to add adverts to the sport videos, where they will collaborate with Google.</p>
-                    <img class="team-photo" src="img/team_vod.jpg" alt="">
-                </div>
-            </section>
-                
-            <section class="citations">
-                <div class="employee">
-                    <img src="img/bozka.jpg" alt="">
-                    <p class="employee-d">dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop</p>
-                    <br><br>
-                    <p class="employee-n">Božena Velebná</p>
-                    <p class="employee-n">QA Engineer</p>
-                </div>
-                <div class="employee">
-                    <img src="img/Peto.jpg" alt="">
-                    <p class="employee-d">dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop</p>
-                    <br><br>
-                    <p class="employee-n">Peter Pajkoš</p>
-                    <p class="employee-n">Java tech lead / Serior Developer</p>
-                </div>
-                <div class="employee">
-                    <img src="img/jarka.jpg" alt="">
-                    <p class="employee-d">dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop</p>
-                    <br><br>
-                    <p class="employee-n">Jarmila Lichvarova</p>
-                    <p class="employee-n">QA Engineer / Scrum master</p>
-                </div>
-            </section>
-        </div>
+        <section class="teams">
+          <div class="team1">
+            <a href="#editorial">
+              <img src="img/tool_editorial.jpeg" alt="Editorial" />
+              <div class="overlay">
+                <div class="name-team"><span>Editorial</span></div>
+              </div>
+            </a>
+          </div>
+          <div class="team2">
+            <a href="#singleCostumersView">
+              <img src="img/tool_scv.jpg" alt="Costumers View" />
+              <div class="overlay">
+                <div class="name-team">Single customer view</div>
+              </div>
+            </a>
+          </div>
+          <div class="team3">
+            <a href="#wtaTv">
+              <img src="img/tool_basketballwta.jpg" alt="Basketball WTA" />
+              <div class="overlay">
+                <div class="name-team">WTA TV &<br />LIVEBASKETBALL.TV</div>
+              </div>
+            </a>
+          </div>
+          <div class="team4">
+            <a href="#coverageTool">
+              <img src="img/tool_coverage.jpg" alt="Coverage Tool" />
+              <div class="overlay">
+                <div class="name-team">Coverage tool</div>
+              </div>
+            </a>
+          </div>
+          <div class="team5">
+            <a href="#projekt0">
+              <img src="img/tool_p0.jpg" alt="Project0" />
+              <div class="overlay">
+                <div class="name-team">Projekt 0</div>
+              </div>
+            </a>
+          </div>
+          <div class="team6">
+            <a href="#rightsPlatform">
+              <img src="img/tool_rights_platform.jpg" alt="Rights Platform" />
+              <div class="overlay">
+                <div class="name-team">Rights platform</div>
+              </div>
+            </a>
+          </div>
+          <div class="heading-team">
+            <h1>DAZN Kosice Teams</h1>
+          </div>
+          <div class="team7">
+            <a href="#cms">
+              <img src="img/tool_cms.jpg" alt="CMS" />
+              <div class="overlay">
+                <div class="name-team">CMS componentisation</div>
+              </div>
+            </a>
+          </div>
+          <div class="team8">
+            <a href="#vod">
+              <img src="img/tool_vod.jpg" style="height: 100%" alt="VOD" />
+              <div class="overlay">
+                <div class="name-team">VOD</div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <div id="editorial" class="desc-team">
+            <p class="team-text">
+              The Editorial team prepares the whole platform for editors (sport redactors). They allow to publicize
+              contents which mainly represents articles. Their main focus is collecting attachments based on
+              sports/geo-locations and players.
+            </p>
+            <img class="team-photo" src="img/team_editorial.jpg" alt="" />
+          </div>
+          <div id="singleCostumersView" class="desc-team">
+            <p class="team-text">
+              This team connects and identifies user accounts. They sort, classify and offer ads based on interest
+              {portals}, demographics. They aggregate data and connect users with DAZN portal. The team applies their
+              own solutions and work with the top technologies
+            </p>
+            <img class="team-photo" src="img/team_scv.jpg" alt="" />
+          </div>
+          <div id="wtaTv" class="desc-team">
+            <p class="team-text">
+              The team creates websites based on client’s requirements. Currently they evolve and support 2 sport
+              websites and keep them working. They are focusing mainly to front-end development.
+            </p>
+            <img class="team-photo" src="img/team_.jpg" alt="" />
+          </div>
+          <div id="coverageTool" class="desc-team">
+            <p class="team-text">
+              The Coverage team takes care of a planning tool that notifies other systems which are already distributed.
+              They also create and schedule sport events via Content Management System.
+            </p>
+            <img class="team-photo" src="img/coverage.jpg" alt="" />
+          </div>
+          <div id="projekt0" class="desc-team">
+            <p class="team-text">
+              Project 0 builds platforms for company websites eg. www.Gool.com or Sportingnews. They create support
+              tools, which help to manage DAZN contents. This team directly collaborate with the Poland DAZN side.
+            </p>
+            <img class="team-photo" src="img/team_p0.jpg" alt="" />
+          </div>
+          <div id="rightsPlatform" class="desc-team">
+            <p class="team-text">
+              The team automates the process of compliance, enforcement and limitation of rights. They also provide
+              banning inappropriate advertisement. The rights should not be violated. The RP team also monitors
+              expiration of contracts.
+            </p>
+            <img class="team-photo" src="img/team_rights_platform.jpg" alt="" />
+          </div>
+          <div id="cms" class="desc-team">
+            <p class="team-text">
+              Their main responsibility is, to create and maintain platforms for other teams. Their maintain also
+              continous integrations and continuous deployment and upgrades to new technologies. They try to replace
+              Puppet with Ansibe. Code refactoring, and github monitoring is also important part of their work.
+            </p>
+            <img class="team-photo" src="img/team_cms.jpg" alt="" />
+          </div>
+          <div id="vod" class="desc-team">
+            <p class="team-text">
+              The VOD team enables for clients streaming of sport contents. They work with recorded sport videos and
+              also support recording of sport events, create clips via Content Management System and send video contents
+              to different destinations and shares with several clients. The teams main focus in the near future will be
+              to add adverts to the sport videos, where they will collaborate with Google.
+            </p>
+            <img class="team-photo" src="img/team_vod.jpg" alt="" />
+          </div>
+        </section>
+
+        <section class="citations">
+          <div class="employee">
+            <img src="img/bozka.jpg" alt="" />
+            <p class="employee-d">
+              dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú
+              adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop
+            </p>
+            <br /><br />
+            <p class="employee-n">Božena Velebná</p>
+            <p class="employee-n">QA Engineer</p>
+          </div>
+          <div class="employee">
+            <img src="img/Peto.jpg" alt="" />
+            <p class="employee-d">
+              dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú
+              adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop
+            </p>
+            <br /><br />
+            <p class="employee-n">Peter Pajkoš</p>
+            <p class="employee-n">Java tech lead / Serior Developer</p>
+          </div>
+          <div class="employee">
+            <img src="img/jarka.jpg" alt="" />
+            <p class="employee-d">
+              dgnkiadgnad gjkadnrgjk adngadgj bnsdb aj uh guiah guihegip hui tghauioúeeriogheuih aiíioadnhjadhioú
+              adjhioúajhioúujio ťjkladjioúhjsdaiohasdklen hionhjsdrioúhjntnsfkqriop
+            </p>
+            <br /><br />
+            <p class="employee-n">Jarmila Lichvarova</p>
+            <p class="employee-n">QA Engineer / Scrum master</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <div class="social-icons">
-             <a href="https://www.facebook.com/daznglobal/" target="_blank" class="a_facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/daznglobal" target="_blank" class="a_twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/company/dazn/" target="_blank" class="a_linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
-    <p>© 2019 Ness KDC. All Rights Reserved<a href="https://www.nesskdc.sk/legal-privacy/" target="_blank"> Legal & Privacy</a></p>
-</footer>
-</body>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/daznglobal/" target="_blank" class="a_facebook"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/daznglobal" target="_blank" class="a_twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/dazn/" target="_blank" class="a_linkedin"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+      <p>
+        © 2019 Ness KDC. All Rights Reserved<a href="https://www.nesskdc.sk/legal-privacy/" target="_blank">
+          Legal & Privacy</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      document.documentElement.className = 'js'; // adds .js class to <html> tag
+      var slides = document.getElementById('slideshow').getElementsByTagName('div');
+      function slideShow(i) {
+        // http://jsfiddle.net/Wja4r/
+        slides[i].className = '';
+        if (i == slides.length - 1) {
+          slides[0].className = 'show';
+          i = -1;
+        }
+        if (i > -1) {
+          slides[i + 1].className = 'show';
+        }
+        setTimeout(function() {
+          slideShow(++i % slides.length);
+        }, 5000); // show each slide for 5 secs
+      }
+      setTimeout(function() {
+        slides[0].className = 'show';
+      }, 1); // style first slide on page load
+      setTimeout(function() {
+        slideShow(0);
+      }, 2000); // show first slide for 5 secs
+    </script>
+  </body>
 </html>

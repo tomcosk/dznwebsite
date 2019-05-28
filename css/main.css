@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-family: sans-serif;
   font-size: 14px;
@@ -30,7 +34,7 @@ p {
   display: none;
   position: relative;
   height: 420px;
-} /* (img px height / img px width x 100) = padding-bottom % */
+}
 #slideshow div {
   position: absolute;
   width: 100%;
@@ -41,7 +45,7 @@ p {
 }
 .js #slideshow div {
   opacity: 0;
-} /* only hide images if js enabled */
+}
 .js #slideshow .show,
 #slideshow .show {
   opacity: 1;
@@ -58,7 +62,6 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
-  paddding-left: 50px;
 }
 
 .desktop-header {
@@ -73,10 +76,6 @@ video {
   width: 175%;
   height: 100%;
   transform: translate(-21%, -30%);
-}
-
-.video div {
-  background-color: rgb(112, 112, 112);
 }
 
 .wrapper {
@@ -118,67 +117,6 @@ video {
   right: 5%;
   height: 60%;
   margin-top: 2%;
-}
-
-/******---MOBILE FOR HEADER---******/
-
-@media only screen and (max-width: 1150px) {
-  #slideshow :nth-child(1) {
-    background-image: url(../img/1.jpg);
-  }
-  #slideshow :nth-child(2) {
-    background-image: url(../img/2.jpg);
-  }
-  #slideshow :nth-child(3) {
-    background-image: url(../img/3.jpg);
-  }
-  #slideshow :nth-child(4) {
-    background-image: url(../img/4.jpg);
-  }
-  #slideshow :nth-child(4) {
-    background-image: url(../img/5.jpg);
-  }
-
-  .slidewrap {
-    position: relative;
-  }
-  .wrapper {
-    width: 90%;
-    height: auto;
-    margin: 0 auto 0 auto;
-  }
-
-  .desktop-header {
-    display: none;
-  }
-
-  .dazn-logo {
-    right: 7%;
-  }
-
-  .slider {
-    display: block;
-    width: 150%;
-    height: 420px;
-    background: url(../img/1.jpg);
-    background-repeat: no-repeat;
-    animation: slide 40s infinite;
-  }
-
-  @keyframes slide {
-    25% {
-      background: url(../img/2.jpg);
-    }
-    50% {
-      background: url(../img/3.jpg);
-    }
-    75% {
-      background: url(../img/4.jpg);
-    }
-    100% {
-      background: url(../img/5.jpg);
-    }
-  }
 }
 
 /********************************************\
@@ -392,8 +330,8 @@ video {
 }
 
 .desc-team img {
-  width: 70%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 
 .team-text {
@@ -404,6 +342,9 @@ video {
 
 .team-photo {
   grid-area: photo;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 56.25%;
 }
 
 /******---CITATIONS---******/
@@ -449,11 +390,123 @@ video {
 .employee-n {
   color: rgb(30, 144, 255);
   font-weight: bold;
+  text-transform: capitalize;
 }
 
-/******---MOBILE FOR MAIN---******/
+/********************************************\
+******************  FOOTER  *****************
+/********************************************\*/
+
+footer {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  background-color: rgb(50, 50, 50);
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0095cd;
+}
+
+footer p {
+  color: white;
+  font-size: 11px;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+footer i {
+  color: white;
+}
+
+.social-icons .a_facebook:hover {
+  background: #4087cf;
+}
+.social-icons .a_facebook {
+  background: #5c99d6;
+}
+
+.social-icons .a_linkedin:hover {
+  background: #3377bb;
+}
+.social-icons .a_linkedin {
+  background: #4b8cce;
+}
+
+.social-icons .a_twitter:hover {
+  background: #1dcaff;
+}
+.social-icons .a_twitter {
+  background: #4dd5ff;
+}
+
+.social-icons a {
+  width: 33.333333333333% !important;
+}
+
+.social-icons a {
+  float: left;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 20px;
+  width: 30%;
+}
+
+.social-icons {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  display: block;
+  padding-bottom: 40px;
+}
+
+
+/******---FOR MOBILE VERSION---******/
+
 
 @media only screen and (max-width: 1150px) {
+  
+}
+
+@media only screen and (max-width: 1150px) {
+  #slideshow :nth-child(1) {
+    background-image: url(../img/1.jpg);
+  }
+  #slideshow :nth-child(2) {
+    background-image: url(../img/2.jpg);
+  }
+  #slideshow :nth-child(3) {
+    background-image: url(../img/3.jpg);
+  }
+  #slideshow :nth-child(4) {
+    background-image: url(../img/4.jpg);
+  }
+  #slideshow :nth-child(5) {
+    background-image: url(../img/5.jpg);
+  }
+  #slideshow :nth-child(6) {
+    background-image: url(../img/6.jpg);
+  }
+
+  .slidewrap {
+    position: relative;
+  }
+  .wrapper {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 0 auto;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .dazn-logo {
+    right: 7%;
+  }
+
   #slideshow {
     display: block;
   }
@@ -536,73 +589,4 @@ video {
       'team7'
       'team8';
   }
-}
-
-/********************************************\
-******************  FOOTER  *****************
-/********************************************\*/
-
-footer {
-  padding-top: 0px;
-  padding-bottom: 30px;
-  background-color: rgb(50, 50, 50);
-  width: 100%;
-  text-align: center;
-}
-
-footer a {
-  text-decoration: none;
-  color: #0095cd;
-}
-
-footer p {
-  color: white;
-  font-size: 11px;
-  font-family: sans-serif;
-  margin-top: 20px;
-}
-
-footer i {
-  color: white;
-}
-
-.social-icons .a_facebook:hover {
-  background: #4087cf;
-}
-.social-icons .a_facebook {
-  background: #5c99d6;
-}
-
-.social-icons .a_linkedin:hover {
-  background: #3377bb;
-}
-.social-icons .a_linkedin {
-  background: #4b8cce;
-}
-
-.social-icons .a_twitter:hover {
-  background: #1dcaff;
-}
-.social-icons .a_twitter {
-  background: #4dd5ff;
-}
-
-.social-icons a {
-  width: 33.333333333333% !important;
-}
-
-.social-icons a {
-  float: left;
-  text-align: center;
-  padding: 10px 0px;
-  font-size: 20px;
-  width: 30%;
-}
-
-.social-icons {
-  width: 100%;
-  text-align: center;
-  background-color: white;
-  display: block;
-  padding-bottom: 40px;
 }

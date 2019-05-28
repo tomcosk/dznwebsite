@@ -4,7 +4,6 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="site.webmanifest" />
-    <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,20 +33,17 @@
           <img class="dazn-logo" src="img/dazn-logo.png" alt="Dazn logo" />
         </div>
         <div id="slideshow">
-          <!-- define each background-image in CSS -->
           <div></div>
-          <!-- #slideshow :nth-child(1) -->
           <div></div>
-          <!-- #slideshow :nth-child(2) -->
           <div></div>
-          <!-- #slideshow :nth-child(3) -->
           <div></div>
-          <!-- #slideshow :nth-child(4) -->
+          <div></div>
+          <div></div>
+        </div>
+        <div class="before-header">
+          <div class="name-team"></div>
         </div>
       </div>
-
-      <!-- <div class="slider">
-        </div> -->
     </header>
 
     <main>
@@ -165,14 +161,14 @@
               The team creates websites based on client’s requirements. Currently they evolve and support 2 sport
               websites and keep them working. They are focusing mainly to front-end development.
             </p>
-            <img class="team-photo" src="img/team_.jpg" alt="" />
+            <img class="team-photo" src="img/team_wta.jpg" alt="" />
           </div>
           <div id="coverageTool" class="desc-team">
             <p class="team-text">
               The Coverage team takes care of a planning tool that notifies other systems which are already distributed.
               They also create and schedule sport events via Content Management System.
             </p>
-            <img class="team-photo" src="img/coverage.jpg" alt="" />
+            <img class="team-photo" src="img/team_coverage.jpg" alt="" />
           </div>
           <div id="projekt0" class="desc-team">
             <p class="team-text">
@@ -261,10 +257,9 @@
     </footer>
 
     <script>
-      document.documentElement.className = 'js'; // adds .js class to <html> tag
+      document.documentElement.className = 'js';
       var slides = document.getElementById('slideshow').getElementsByTagName('div');
       function slideShow(i) {
-        // http://jsfiddle.net/Wja4r/
         slides[i].className = '';
         if (i == slides.length - 1) {
           slides[0].className = 'show';
@@ -275,14 +270,14 @@
         }
         setTimeout(function() {
           slideShow(++i % slides.length);
-        }, 5000); // show each slide for 5 secs
+        }, 5000);
       }
       setTimeout(function() {
         slides[0].className = 'show';
-      }, 1); // style first slide on page load
+      }, 1);
       setTimeout(function() {
         slideShow(0);
-      }, 2000); // show first slide for 5 secs
+      }, 2000);
     </script>
   </body>
 </html>

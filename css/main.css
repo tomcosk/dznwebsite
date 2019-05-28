@@ -132,7 +132,7 @@ video {
 
   .slider {
       display: block;
-      width: 100%;
+      width: 150%;
       height: 420px;
       background: url(../img/1.jpg);
       background-repeat: no-repeat;
@@ -266,14 +266,15 @@ video {
 
 .heading-team {
   grid-area: heading;
+  border-bottom: 1px solid rgb(180,180,180);
+  margin-left: 10%;
 }
 
-.heading-team h1 {
+.heading-team h1{
   color: rgb(30,144,255);
   font-size: 300%;
   font-family: sans-serif;
   text-align: center;
-  place-self: center;
   margin-top: auto;
 }
 
@@ -392,10 +393,6 @@ video {
   height: 90%;
 }
 
-.desc-team img:hover {
-  transform: scale(1.5);
-}
-
 .team-text {
   grid-area: desc;
   text-align: justify;
@@ -479,6 +476,10 @@ video {
       "team4 team5 team6"
       "team7 team8 .";
   }
+
+  .heading-team {
+    border-bottom: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -510,9 +511,24 @@ video {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .about p {
       font-size: 20px;
+  }
+
+  .teams {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "heading"
+      "team1"
+      "team2"
+      "team3"
+      "team4"
+      "team5"
+      "team6"
+      "team7"
+      "team8";
   }
 }
 

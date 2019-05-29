@@ -1,5 +1,4 @@
 $(function() {
-  //   $('.desc-team').hide();
 
   $('.team1').click(function() {
     showTeam(editorial);
@@ -30,6 +29,5 @@ $(function() {
 function showTeam(teamName) {
   $('.desc-team').hide();
   $('.desc-teams').css('display', 'grid');
-  console.log(teamName);
   $(teamName).css('display', 'grid');
 }

@@ -334,7 +334,7 @@ video {
   margin-top: 50px;
 }
 
-.desc-team img {
+.desc-team a img {
   width: 80%;
 }
 
@@ -348,6 +348,7 @@ video {
   grid-area: photo;
   width: 100%;
   margin: 0 auto 0 auto;
+  margin-left: 15%;
 }
 
 .team-photo:hover {
@@ -364,6 +365,10 @@ video {
   .team-photo {
     padding-bottom: 10%;
   }
+}
+
+.desc-teams {
+  display: none;
 }
 
 /******---CITATIONS---******/
@@ -525,6 +530,7 @@ footer i {
     display: block;
   }
   .desc-team {
+    text-align: center;
     grid-template-areas:
       'desc desc'
       'photo photo';
@@ -535,6 +541,7 @@ footer i {
   }
 
   .team-photo {
+    margin: 0 auto 0 auto;
     margin-top: 30px;
   }
 }

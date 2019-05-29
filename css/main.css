@@ -148,7 +148,7 @@ video {
 
 @media (max-device-width: 1024px) and (orientation: landscape) {
   .about h1 {
-    margin-top: 50%;
+    margin-top: 40%;
   }
 }
 
@@ -540,6 +540,10 @@ footer i {
     grid-template-areas:
       'desc desc'
       'photo photo';
+  }
+
+  .about h1 {
+    margin-top: 0;
   }
 
   .about p {

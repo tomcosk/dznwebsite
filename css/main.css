@@ -350,6 +350,10 @@ video {
   margin: 0 auto 0 auto;
 }
 
+.team-photo:hover {
+  cursor: pointer;
+}
+
 @-moz-document url-prefix() {
   .team-photo {
     padding-bottom: 10%;
@@ -529,6 +533,10 @@ footer i {
   .about p {
     text-align: center;
   }
+
+  .team-photo {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -583,6 +591,7 @@ footer i {
 @media only screen and (max-width: 500px) {
   .about p {
     font-size: 20px;
+    text-align: center;
   }
 
   .teams {

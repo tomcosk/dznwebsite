@@ -1,6 +1,6 @@
 $(function(){
     $(".desc-team").hide();
-    
+  
     $(".team1").click(function(){
         showTeam(editorial);  
     });

@@ -366,6 +366,29 @@ video {
   }
 }
 
+/******----PORDTFOLIO----******/
+
+.gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.gallery img{
+  position: fixed;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: auto;
+}
+
+
 /******---CITATIONS---******/
 
 .citations {

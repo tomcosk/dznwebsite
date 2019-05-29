@@ -332,7 +332,6 @@ video {
   grid-template-rows: auto;
   grid-template-areas: 'desc photo';
   margin-top: 50px;
-  gap: 90px;
 }
 
 .desc-team img {
@@ -348,6 +347,7 @@ video {
 .team-photo {
   grid-area: photo;
   width: 100%;
+  margin: 0 auto 0 auto;
 }
 
 @-moz-document url-prefix() {
@@ -528,10 +528,6 @@ footer i {
 
   .about p {
     text-align: center;
-  }
-
-  .team-photo {
-    padding-bottom: 56.25%;
   }
 }
 

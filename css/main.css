@@ -119,6 +119,22 @@ video {
   margin-top: 2%;
 }
 
+.en-icon, .sk-icon {
+  position: absolute;
+  float: left;
+  top: 0;
+  transition: 1s;
+  right: 10.5%;
+  margin-top: 3.5%;
+}
+
+@media only screen and (max-width: 1300px) {
+  .en-icon, .sk-icon {
+    right: 12.5%;
+    margin-top: 4%;    
+  }
+}
+
 /********************************************\
 *******************  MAIN  ******************
 /********************************************\*/
@@ -620,6 +636,11 @@ footer i {
     right: 7%;
   }
 
+  .en-icon, .sk-icon  {
+    right: 16%;
+    margin-top: 4.35%;
+  }
+
   #slideshow {
     display: block;
   }
@@ -674,6 +695,11 @@ footer i {
   .heading-team h1 {
     margin-bottom: 20px;
   }
+
+  .en-icon, .sk-icon  {
+    right: 19%;
+    margin-top: 5%;    
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -708,6 +734,11 @@ footer i {
       'team6'
       'team7'
       'team8';
+  }
+
+  .en-icon, .sk-icon  {
+    right: 25%;
+    margin-top: 7.5%;    
   }
 }
 

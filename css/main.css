@@ -125,7 +125,7 @@ video {
   top: 0;
   transition: 1s;
   right: 10.5%;
-  margin-top: 3.5%;
+  margin-top: 3.4%;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -447,10 +447,6 @@ video {
     text-align: center;
   }
 
-  .team-text {
-    text-align: center;
-  }
-
   .team-photo {
     margin-left: auto;
     margin-right: auto;
@@ -753,5 +749,26 @@ footer i {
 
   #slideshow div:nth-child(2){
     background-position: left;
+  }
+  
+  .en-icon, .sk-icon  {
+    right: 25%;
+    margin-top: 7.5%;    
+  }
+}
+
+@media only screen and (max-width: 624px) {
+
+  .en-icon, .sk-icon  {
+    right: 23.5%;
+    margin-top: 7%;    
+  }
+}
+
+@media only screen and (max-width: 428px) {
+
+  .en-icon, .sk-icon  {
+    right: 28%;
+    margin-top: 7.6%;    
   }
 }

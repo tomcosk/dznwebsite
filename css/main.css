@@ -332,6 +332,7 @@ video {
   grid-template-rows: auto;
   grid-template-areas: 'desc photo';
   margin-top: 50px;
+  gap: 15%;
 }
 
 .desc-team a img {
@@ -415,6 +416,95 @@ video {
   color: rgb(30, 144, 255);
   font-weight: bold;
   text-transform: capitalize;
+}
+
+/******---MOBILE FOR MAIN---******/
+
+@media only screen and (max-width: 1150px) {
+  .desc-team {
+    grid-template-areas:
+      'desc desc'
+      'photo photo';
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .team-photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .heading-team h1 {
+    font-size: 200%;
+  }
+
+  .teams {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'heading heading heading'
+      'team1 team2 team3'
+      'team4 team5 team6'
+      'team7 team8 .';
+  }
+
+  .heading-team {
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    grid-template-areas:
+      'heading heading'
+      't-about t-about';
+  }
+
+  .about p {
+    margin-top: 30px;
+  }
+
+  .heading-team h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .teams {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'heading heading'
+      'team1 team2'
+      'team3 team4'
+      'team5 team6'
+      'team7 team8';
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about p {
+    font-size: 20px;
+  }
+
+  .teams {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'heading'
+      'team1'
+      'team2'
+      'team3'
+      'team4'
+      'team5'
+      'team6'
+      'team7'
+      'team8';
+  }
 }
 
 /********************************************\

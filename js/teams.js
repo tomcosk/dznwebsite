@@ -13,7 +13,7 @@ $(function() {
     showTeam(coverageTool);
   });
   $('.team5').click(function() {
-    showTeam(projekt0);
+    showTeam(project0);
   });
   $('.team6').click(function() {
     showTeam(rightsPlatform);

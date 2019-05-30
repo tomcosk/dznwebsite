@@ -435,6 +435,10 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .citations .employee:nth-child(3) {
+    grid-column: 1 / -1;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -704,5 +708,15 @@ footer i {
       'team6'
       'team7'
       'team8';
+  }
+}
+
+@media (min-width : 319px) and (max-width: 480px) {
+  #slideshow div{
+    background-position: center;
+  }
+
+  #slideshow div:nth-child(2){
+    background-position: left;
   }
 }
